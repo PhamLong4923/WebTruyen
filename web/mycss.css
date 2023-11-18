@@ -1,0 +1,597 @@
+body{
+    background-color: #3d3f43;
+}
+
+.nt_wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nt_wrapper .header{
+    height: 130px;
+    background-color: whitesmoke;
+}
+
+.nav-account:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    font-size: 14px; /* Thay đổi kích cỡ chữ */
+    color: black; /* Thay đổi màu chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+.dropdown-menu li a {
+    padding: 5px 10px; /* Thay đổi khoảng cách giữa các mục */
+}
+
+.dropdown-menu li:hover {
+    background-color: gray; /* Thay đổi màu nền khi di chuột qua */
+}
+
+.dropdown-menu li a:hover {
+    color: plum; /* Thay đổi màu nền khi di chuột qua */
+}
+
+.dropdown-menu li {
+    flex-grow: 1; /* Chia đều chiều rộng cho từng phần tử */
+}
+
+.navbar-form .input-group {
+    width: 400px; /* Thay đổi giá trị này để điều chỉnh chiều rộng phù hợp với mong muốn */
+}
+
+.searchbutton{
+    background-color: #4caf50
+}
+
+
+.dropdown{
+    list-style: none;
+}
+
+.main-nav{
+    width: 100%;
+
+}
+
+.nav-dropdown:hover .nt-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nt-menu.dropdown-item{
+    grid-column: auto;
+}
+
+.main{
+    min-height: 3072px;
+    border-color: black;
+    background-color: gray;
+}
+
+.content{
+    width: 100%;
+    min-height: 3072px;
+    height: auto;
+    display: flex;
+    margin: auto;
+
+}
+
+.nt_content{
+    width: 100%;
+    min-height: 2880px;
+    height: auto;
+    background-color: whitesmoke
+}
+
+
+.relative-content{
+    width: 100%;
+    height: 40px;
+}
+
+.center-content{
+    width: 98%;
+    margin: auto;
+}
+
+.page-title{
+    font-size: 18px;
+}
+
+.items{
+    width: 99%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: calc(98% / 6);
+    height: 300px;
+    margin: 1px;
+
+}
+
+
+.ct-top{
+
+    height: 60%;
+    margin: auto;
+    background-color: wheat;
+}
+
+.ct-foot{
+
+    height: 40%;
+    background-color: greenyellow;
+    margin: auto;
+}
+
+.new-chapter{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+.chapter-latest{
+    font-size: 12px;
+}
+
+.chapter-latest a{
+    text-decoration: none;
+}
+
+.chapter-latest-time{
+    font-size: 12px;
+}
+
+
+.righ-component{
+    width: 100%;
+    height: calc(95% / 3);
+    background-color: white;
+    border: 1px solid black;
+    margin: auto;
+
+
+}
+
+.box{
+    width: 99%;
+    height: 100%;
+}
+
+.thumb {
+    width: 60px;
+    height: 70px;
+    margin-right: 10px; /* đặt khoảng cách giữa ảnh và tiêu đề */
+    float: left; /* căn trái cho phần từ chứa ảnh */
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* điều chỉnh kích thước ảnh để vừa với khung */
+}
+
+.thumb-title {
+    display: inline-block;
+    margin-top: 5px; /* đặt khoảng cách giữa ảnh và tiêu đề */
+}
+
+.thumb-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.thumb-chapter {
+    font-size: 12px;
+    margin: 0;
+}
+
+.list-unstyled{
+    border-bottom: 1px gray solid;
+    border-top: 1px gray solid;
+}
+
+.pagination-outter {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* căn giữa theo chiều ngang */
+}
+
+.bookInf{
+    width: 100%;
+    height: 400px;
+    border: 1px black solid;
+    display: flex;
+}
+
+.introduction{
+    width: 100%;
+    height: auto;
+    border: 1px blue solid;
+}
+
+.bookChapter{
+    height: 500px;
+    width: 100%;
+    border: 1px #01020e solid;
+}
+
+.book-img-contianer{
+    width: 35%;
+    height: 270px;
+    border: 2px red solid;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-img img{
+    height: 270px;
+    border-radius: 3%;
+    box-shadow: 1px 1px 2px 2px #AAA;
+}
+
+.book-inf-container{
+    width: 70%;
+    height: 98%;
+    border: 2px green solid;
+    margin: 5px;
+}
+
+.action-button{
+    margin-left: 8px;
+    width: 30%;
+    height: 35px;
+    border: 1px black solid;
+    border-radius: 8%;
+}
+
+.scrollable-content {
+    width: 89%; /* Độ rộng của thẻ */
+    overflow: scroll; /* Thêm thanh cuộn */
+    border: 1px solid black; /* Viền của thẻ */
+    padding: 10px; /* Khoảng cách bên trong của thẻ */
+    margin: auto;
+    overflow-y: auto; /* Hiển thị thanh cuộn khi nội dung vượt quá chiều cao */
+    max-height: 500px; /* Chiều cao tối đa của khung thanh cuộn */
+    min-height: 100px; /* Chiều cao tối thiểu của khung thanh cuộn */
+}
+
+.inner-component {
+    height: 28px;
+    width: 100%;
+    border-bottom: 1px grey solid;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.inner-component a{
+    text-decoration: none;
+}
+
+
+
+.comment-input {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.commentcontent{
+    width: 90%;
+    border: 1px #AAA solid;
+    border-radius: 10px;
+}
+
+.avataruser{
+    width: 60px;
+    height: 60px;
+    border: 1px #01020e solid;
+    border-radius: 50%;
+}
+
+
+.username{
+    width: 100%;
+    border-bottom: 1px #f0b128 solid;
+}
+
+.othercm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.comment{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+
+}
+
+.chaptercontent{
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    border: 1px red solid;
+    background-color: white;
+}
+.book-comments{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+}
+
+.chapter-transition{
+    width: 100%;
+    height: 50px;
+    border: 1px aqua solid;
+    background-color: aqua;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.chapter-transition .transition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.chapter-transition .transition a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+
+}
+
+
+.chapter-transition .transition a.home,.prev,.next {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000; /* Màu và độ rộng của border */
+    border-radius: 50%; /* Tạo border hình tròn */
+    padding: 5px; /* Khoảng cách từ nội dung tới border */
+    text-decoration: none;
+}
+
+.chapter-transition .transition a.subscribeBook{
+    text-decoration: none;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 3px;
+    width: 120px;
+}
+
+
+
+.chapter-transition .transition select.form-select {
+    width: 40%;
+    height: 80%;
+}
+
+.chapter-transition .transition a span {
+
+    margin-left: 5px;
+}
+
+.chapter-img{
+    width: 100%;
+    height: 1345px;
+    border: 2px black solid;
+}
+
+.controll-banner{
+    width: 100%;
+    height: 300px;
+    background-color: whitesmoke;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookselectname{
+    font-size: 20px;
+    padding: 5px;
+
+}
+.errorbutton a{
+    width: 120px;
+    height: 25px;
+    border: 1px #f0b128 solid;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #f0b128;
+
+}
+
+.errorbutton{
+    margin: auto;
+}
+
+.notifycation{
+    width: 95%;
+    height: 45px;
+    border: 1px aquamarine solid;
+    background-color: #b8edf4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.transitionbutton a.prev, .next{
+    margin: auto;
+}
+
+.transitionbutton{
+    margin: auto;
+    padding: 20px;
+}
+
+
+.footer{
+    height: 500px;
+
+}
+
+.right-controll{
+    width: 30%;
+    height: 700px;
+    border: 1px red solid;
+}
+
+.summaryinfo{
+    width: 100%;
+    height: 45px;
+    border: 1px aqua solid;
+}
+
+.authorasign{
+    width: 100%;
+    height: 45px;
+    border: 1px aqua solid;
+}
+
+.following{
+    width: 100%;
+    height: 45px;
+    border: 1px aqua solid;
+}
+
+.changeinfo{
+    width: 100%;
+    height: 45px;
+    border: 1px aqua solid;
+}
+
+.avata{
+    display: flex;
+    padding: 10px;
+}
+
+.avata img{
+    border: 1px royalblue solid;
+
+}
+
+.avata p{
+    margin-left: 20px;
+
+}
+
+.left-content{
+    width: 70%;
+    min-height: 700px;
+    height: auto;
+    border: 1px red solid;
+}
+
+.right-controll{
+    width: 30%;
+}
+
+.intro-author{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.authorinf{
+    background-color: #fbd309;
+    border-radius: 4px;
+}
+
+.form-label{
+    width: 150px;
+}
+
+.dashboard{
+    display: flex;
+}
+
+.updateinfo label {
+    margin-bottom: 5px;
+}
+.updateinfo input {
+    margin-bottom: 10px;
+}
+
+.managerbox{
+    width: 96%;
+    height: 50px;
+    border: 1px red solid;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.box{
+    width: 32%;
+    height: 100%;
+    border: 1px black solid;
+}
+
+.managerajax{
+    width: 100%;
+    height: auto;
+}
+
+.requesttable{
+    width: 99%;
+    height: auto;
+}
+
+.break-word {
+    word-wrap: break-word;
+}
+
+.advancesearch{
+    width: 98%;
+    min-height: 200px;
+    height: auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.type{
+    width: 98%;
+    margin: auto;
+}
+
+.checkbox-container {
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Thay đổi số cột thành 4 */
+    gap: 0px;
+}
+
+input[type="checkbox"] {
+    transform: scale(0.5); /* Tăng giá trị scale để checkbox gần với chữ cái */
+}
